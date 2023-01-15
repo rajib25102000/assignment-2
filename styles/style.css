@@ -36,6 +36,11 @@ text-align: center;
 padding: 80px;
 
 }
+.brand-info{
+    text-align: center;
+    margin-left:400px;
+    margin-right: 350px;
+}
 .brand-tittle{
     font-size: 64px;
     color: #131313;
@@ -86,16 +91,31 @@ section{
     grid-row-gap:24px;
     
 }
- .card img:hover{
-     border: 3px red;
+.card{
+    width: 342px;
+    margin:10px auto;
+    box-shadow: 0 0 5px gray;
+    overflow: hidden;
+    position:relative;
 }
 
+.card img{
+    width:100%;
+    height: auto;
+    transform: scale(1);
+    display: block;
+    transition: all 0.5s;
+}
+.card:hover img{
+    transform: scale(1.05);
+   
+}
 .team-detailes{
     width: 50%;
     margin-top: 150px;
     padding: 60px;
 }
-.team-detailes:hover{
+.team-detailes :hover{
     border:3px solid red;
    
 }
@@ -276,6 +296,33 @@ color: #131313;
 
 /* -------------------------Our Sponspors end--------------------- */
 
+/* -----------------future plan style  */
+.My-Plans-p{
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: 45px;
+    font-weight: 700;
+}
+.course{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.course-info{
+    background-color: #727272;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+.course-info h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.course-info p{
+    color: #f5e3e3;
+}
+
 /* -----------------footer------------- */
 .footer{
     background-color: rgba(255, 244, 231, 1);
@@ -294,8 +341,18 @@ color: #131313;
     line-height: 23px;
     text-align: center;
     color: #424242;
-
-
 }
+@media only screen and (max-with:688px) {
+    
+    .navbar .brand-banner  .team {
+        flex-direction: column;
+    }
+    .mamber .enjoy-detailes .enjoy-girl .facts-info .box-detailes .course-info{
+        grid-template-columns: repeat(1,fr);
+        flex-direction: column;
+    }
+    
+}
+
 
 
